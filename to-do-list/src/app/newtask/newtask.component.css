@@ -1,0 +1,12 @@
+
+  .adder:hover {
+    background-color: #eee;
+    cursor: pointer;
+    color: #607d8b;
+}
+.adder{
+  text-align: center;
+  color: #eee;
+  background-color: #3f525c;
+  border-radius: 0.5;
+}
