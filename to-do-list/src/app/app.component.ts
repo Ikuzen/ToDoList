@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { of } from 'rxjs';
+import { of, from } from 'rxjs';
 import { reduce} from 'rxjs/operators';
 import { interval } from 'rxjs';
+import{tab} from './tab'
 
 //emits any number of provided values in sequence
 
@@ -12,6 +13,22 @@ import { interval } from 'rxjs';
 })
 export class AppComponent {
   title = 'What to do.... What to do..?';
+  tabLink(url:string){
+    console.log(tab)
+    if(url === 'Dashboard'){
+      tab = "Dashboard";
+    }
+    else if(url === 'All'){
+      tab= "All";
+    }
+    else if(url === 'Active'){
+      tab= "Active";
+    }
+    else if(url === 'Done'){
+      tab= "Done";
+    }
+
+  }
 }
 
 

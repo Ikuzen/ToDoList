@@ -1,10 +1,11 @@
 <h1>{{title}}</h1>
 <nav>
-  <a routerLink="/dashboard">Dashboard</a>
+  <a  (click)="tabLink('Dashboard')">Dashboard</a>
   <a routerLink="/heroes">Heroes</a>
-  <a routerLink="/all">All</a>
-  <a routerLink="/active">Active </a>
-  <a routerLink="/done">Done</a>
+  <a (click)="tabLink('All')">All</a>
+  <a (click)="tabLink('Active')">Active </a>
+  <a (click)="tabLink('Done')">Done</a>
+  <app-heroes></app-heroes>
 </nav>
 <app-newtask></app-newtask>
 <router-outlet></router-outlet>
