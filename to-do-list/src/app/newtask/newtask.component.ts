@@ -15,7 +15,7 @@ export class NewtaskComponent implements OnInit {
   
   addTask(){
     let newID = HEROES[HEROES.length-1].id+1
-    HEROES.push({ id:newID ,active:true,done:false,description:"", name: 'New Task !' })
+    HEROES.push({ id:newID ,active:true,done:false,description:"", name: 'New Task !',checked:false })
     console.log("pushed")
   }
 }

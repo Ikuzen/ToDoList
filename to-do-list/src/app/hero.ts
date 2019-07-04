@@ -4,4 +4,5 @@ export class Hero {
   done:boolean;
   name: string;
   description: string;
+  checked:boolean;
 }

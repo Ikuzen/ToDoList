@@ -4,7 +4,7 @@
       <a routerLink="/detail/{{hero.id}}">
         <span class="badge">{{hero.id}}</span> {{hero.name}}
       </a>
-      <input type="checkbox" value="{{checkTask(hero) ? return 'unchecked' : return 'checked'" (click)="checkTask(hero)">
+      <input type="checkbox" unchecked (click)="checkTask(hero)">
     </div>
   </li>
 </ul>
